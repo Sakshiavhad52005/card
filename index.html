@@ -21,11 +21,11 @@
     
         }
         .card:hover {
-        transform: scale(1.02);
+        transform: scale(1.0);
         }
         .card img {
         width: 100%;
-        height: 192%;
+        height: 140%;
         object-fit: cover;
         }
         .badge {
@@ -53,6 +53,12 @@
     color: #555;
     margin-bottom: 10px;
 }
+.info {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
 
 .price-rating {
     display: flex;
@@ -60,6 +66,38 @@
     align-items: center;
     margin-bottom: 15px;
 }
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+}
+.rating img {
+    width: 16px;
+    height: 16px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e36414;
+}
+
 
     </style>
 </head>
@@ -74,9 +112,21 @@
         <h2>Cheese Burst Pizza</h2>
         <p class="desc">Loaded with extra cheese and fresh toppings.</p>
 
+        <p class="info">
+            size: Medium <br>
+            Crust: Cheese Burst <br>
+            Delivery: 30 mins
+        </p>
+
         <div class="price-rating">
             <span class="price">₹199</span>
-            <span class="rating"></span>
+            <span class="rating">
+            <img src="image/favorite.png" alt="star icon"> 
+            <img src="image/favorite.png" alt="star icon">
+            <img src="image/favorite.png" alt="star icon">
+            <img src="image/favorite.png" alt="star icon">
+            <img src="image/favorite (1).png" alt="star icon">
+            </span>
         </div>
 
         <button>Order Now</button>
